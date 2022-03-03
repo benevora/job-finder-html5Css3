@@ -592,7 +592,6 @@ footer .wrapper:after {
 
 
 
-
 /* RESPONSIVE */
 /* (1) Laptop 1024px */
 @media screen and (max-width: 1024px) {
@@ -891,3 +890,103 @@ footer .wrapper:after {
     width: 100%;
   }
  }
+
+
+
+
+
+
+ /* FIND JOBS PAGE */
+#findjobs #search-form {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  width: 100%;
+  background-color: #3381F3;
+  border-top: 5px solid #0000E6;
+}
+
+#findjobs #lastjobs-container {
+  margin-top: 3em;
+}
+
+#findjobs #search-form input, #findjobs #search-form select {
+  width: 20%;
+}
+
+#findjobs #search-form input[type=submit] {
+  background-color: #FFF;
+  color: #3381F3;
+}
+
+#findjobs #lastjobs-container ul {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  margin: 0;
+}
+
+#type-filter {
+  text-align: left;
+}
+
+#findjobs #type-filter ul {
+  margin-top: 0;
+  border-radius: 0;
+  border: 0;
+  background-color: #FFF;
+  border-right: 1px solid #CCC;
+}
+
+#findjobs #type-filter ul li {
+  display: inline-block;
+  width: 23%;
+  height: 50px;
+  line-height: 50px;
+  border-bottom: none;
+  border-left: 1px solid #CCC;
+  padding-left: 1em;
+}
+
+#findjobs #type-filter label {
+  text-transform: uppercase;
+  color: #666;
+  font-weight: bold;
+  margin-left: .5em;
+}
+
+
+/* RESPONSIVE FOR FIND JOBS PAGE  */
+/* (1) Laptop 1024px */
+@media screen and (max-width: 1024px) {
+  #findjobs #search-form input, #findjobs #search-form select {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #findjobs #search-form input[type=submit] {
+    margin-bottom: 0;
+  }
+  
+  #findjobs #type-filter ul li {
+    width: 100%;
+    border-bottom: 1px solid #CCC;
+    box-sizing: border-box;
+  }
+  
+  #findjobs #type-filter ul li:last-child {
+    border-bottom: none;
+    border-right: none;
+  }
+}
+
+/* (2) Mobile 576px */
+@media screen and (max-width: 576px) {
+  #findjobs #lastjobs-container {
+    padding-bottom: 5em;
+  }
+
+  #findjobs footer {
+    padding-top: 1em;
+  }
+}
+
