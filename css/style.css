@@ -732,18 +732,20 @@ footer .wrapper:after {
 
 /* ============ JOB PAGE ======================================== */
 #job-header {
-  margin-top: 100px;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
   background-color: #FAFAFA;
   border-bottom: 1px solid #CCC;
+  margin-top: 100px;
   padding: 2em 0;
 }
 
 #job-header h1 {
   font-size: 3em;
   text-align: center;
+}
+
+#job-header .company-box {
+  width: 100%;
 }
 
 #job-header #job-info {
@@ -754,15 +756,29 @@ footer .wrapper:after {
 }
 
 #job-header #job-info div {
-  width: 25%;
+  width:25%;
   height: 30px;
   line-height: 30px;
   float: left;
   position: relative;
-  padding-left: 3em;
-  padding-right: 3em;
+  padding-left: 0em;
+  padding-right: 0em;
   box-sizing: border-box;
   padding-top: 0;
+}
+
+#job-header #job-info .clt {
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#job-header #job-info .locality {
+  width: 25%;
+}
+
+#job-header #job-info .date {
+  width: 25%;
 }
 
 #job-header #job-info .job-type {
@@ -784,22 +800,21 @@ footer .wrapper:after {
   border-right: 1px solid #CCC;
 }
 
+
 #jobpage .wrapper {
   padding: 2em 0;
 }
 
-#jobpage .wrapper ::after {
+#jobpage .wrapper:after {
   clear: both;
   content: "";
   display: block;
 }
 
 #jobpage #job-container {
-  margin-top: 60px;
-  background-color: #FFF;
-  position: relative;
   float: left;
   width: 75%;
+  position: relative;
 }
 
 #jobpage #job-container .page-title {
@@ -845,7 +860,7 @@ footer .wrapper:after {
   border-bottom: 1px solid #CCC;
 }
 
-#jobpage #companyinfo-container #apply-btn {
+ #apply-btn {
   width: 100%;
   height: 60px;
   line-height: 60px;
@@ -854,14 +869,40 @@ footer .wrapper:after {
   text-transform: uppercase;
   text-decoration: none;
   background-color: transparent;
+  border: 2px solid #3381F3;
+  color: #3381F3;
+  border-radius: 5px;
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  transition: .5s;
+}
+
+ #apply-btn:hover {
+  background-color: #3381F3;
+  color: #FFF;
+}
+
+#job-social-list {
+  margin-top: 1em;
+  padding-left: 0;
+}
+
+#job-social-list li {
+  display: block;
+  list-style: none;
+  height: 50px;  
+}
+
+#job-social-list li a {
+  text-decoration: none;
+  color: #666;
 }
 
 
 
 
-
-
-/* ============= RESPONSIVE ===================================== */
+/* ============= RESPONSIVE (MEDIA QUERIES)===================================== */
 /* (1) Laptop 1024px */
 @media screen and (max-width: 1024px) {
   #logo {
