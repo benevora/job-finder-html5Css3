@@ -733,6 +733,7 @@ footer .wrapper:after {
 /* ============ JOB PAGE ======================================== */
 #job-main-baner {
   background-color: #FAFAFA;
+  border-bottom: 1px solid #CCC;
 }
 
 #job-header {
@@ -740,7 +741,6 @@ footer .wrapper:after {
   margin-left: auto;
   margin-right: auto;
   background-color: #FAFAFA;
-  border-bottom: 1px solid #CCC;
   margin-top: 100px;
   padding: 2em 0;
 }
