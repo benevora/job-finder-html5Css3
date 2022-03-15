@@ -778,6 +778,14 @@ footer .wrapper:after {
   margin-left: 12.5%;
 }
 
+#job-header #job-info .locality {
+  padding: 0px;
+}
+
+#job-header #job-info .date {
+  padding: 0px;
+}
+
 #job-info .date i, #job-info .date p {
   display: inline-block;
   color: #666;
