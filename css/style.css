@@ -779,11 +779,11 @@ footer .wrapper:after {
 }
 
 #job-header #job-info .locality {
-  padding: 0px;
+  padding: 0em;
 }
 
 #job-header #job-info .date {
-  padding: 0px;
+  padding: 0em;
 }
 
 #job-info .date i, #job-info .date p {
